@@ -1,0 +1,22 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #f2f2f2;
+    text-align: center;
+    padding: 20px;
+}
+
+#hero {
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 50px;
+}
+
+/* Estilize os demais elementos da página conforme a sua preferência */
