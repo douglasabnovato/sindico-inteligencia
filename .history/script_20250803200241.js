@@ -38,7 +38,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // 3. Validação do Formulário de Contato (Conversão)
-    /*contactForm.addEventListener('submit', function(e) {
+    contactForm.addEventListener('submit', function(e) {
         e.preventDefault();
 
         // Validação básica dos campos
@@ -60,7 +60,7 @@ document.addEventListener('DOMContentLoaded', () => {
         // Simulação de envio de formulário
         alert('Obrigado! Sua mensagem foi enviada com sucesso. Em breve entraremos em contato.');
         contactForm.reset();
-    });*/
+    });
 
     function validateEmail(email) {
         const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
