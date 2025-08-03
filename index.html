@@ -185,6 +185,7 @@
           id="contact-form"
           action="https://formspree.io/f/xwpqnzoa"
           method="POST"
+          target="_self"
         >
           <input
             type="text"
@@ -216,6 +217,15 @@
           ></textarea>
           <button type="submit" class="btn btn-submit">Enviar Mensagem</button>
         </form>
+
+        <div id="form-feedback" class="form-feedback" style="display: none">
+          <h3>Mensagem Enviada!</h3>
+          <p>
+            Obrigado pelo seu contato. Em breve, a equipe Síndico Tech entrará
+            em contato com você.
+          </p>
+          <a href="#" class="btn btn-primary" onclick="hideFeedback()">Ok</a>
+        </div>
       </div>
     </section>
 
