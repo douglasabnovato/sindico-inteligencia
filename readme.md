@@ -39,7 +39,7 @@ Este projeto segue uma abordagem de design e usabilidade centrada no usuário, c
 
 ---
 
-## Telas do projeto
+## Telas do Formulário de contato
 
 - ![Contato enviado](./.github/envio-email-1.png)
 - ![Painel](./.github/envio-email-2.png)
