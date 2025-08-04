@@ -1,10 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
-
     const hamburger = document.querySelector('.hamburger-menu');
     const navMenu = document.querySelector('.nav-menu');
     const navLinks = document.querySelectorAll('.nav-menu a');
-    const contactForm = document.getElementById('contact-form');
-
     const form = document.getElementById('contact-form');
     const formFeedback = document.getElementById('form-feedback');
 
@@ -40,36 +37,11 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // 3. Validação do Formulário de Contato (Conversão)
-    /*contactForm.addEventListener('submit', function(e) {
-        e.preventDefault();
-
-        // Validação básica dos campos
-        const name = document.getElementById('name').value.trim();
-        const email = document.getElementById('email').value.trim();
-        const phone = document.getElementById('phone').value.trim();
-        const message = document.getElementById('message').value.trim();
-
-        if (name === '' || email === '' || phone === '' || message === '') {
-            alert('Por favor, preencha todos os campos obrigatórios.');
-            return;
-        }
-
-        if (!validateEmail(email)) {
-            alert('Por favor, insira um e-mail válido.');
-            return;
-        }
-
-        // Simulação de envio de formulário
-        alert('Obrigado! Sua mensagem foi enviada com sucesso. Em breve entraremos em contato.');
-        contactForm.reset();
-    });*/
-
+    // Função de validação do e-mail
     function validateEmail(email) {
         const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
         return re.test(String(email).toLowerCase());
     }
-
 
     // Função para esconder a mensagem de feedback
     window.hideFeedback = function() {
@@ -122,5 +94,4 @@ document.addEventListener('DOMContentLoaded', () => {
             alert('Ocorreu um erro ao enviar a mensagem. Por favor, tente novamente.');
         }
     });
-
 });
